@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { faDownload, faPause, faPlay, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faPause, faPlay, faInfo, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface AudioPlayerProps {
@@ -151,6 +151,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
           className="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded-md focus:outline-none"
           onClick={() => setShowLyrics(!showLyrics)}
         >
+          <FontAwesomeIcon icon={faMusic} className="me-2" />
           {showLyrics ? 'Hide Lyrics' : 'Show Lyrics'}
         </button>
         {showLyrics && (

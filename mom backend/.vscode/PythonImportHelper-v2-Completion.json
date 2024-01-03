@@ -1,0 +1,347 @@
+[
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "models",
+        "description": "models",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "SQLALCHEMY_DATABASE_URL",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "SQLALCHEMY_DATABASE_URL = \"sqlite:///./poems.db\"\nengine = create_engine(\n    SQLALCHEMY_DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# No need to create tables here\n# Tables will be created when needed in the main application",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "engine = create_engine(\n    SQLALCHEMY_DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# No need to create tables here\n# Tables will be created when needed in the main application",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# No need to create tables here\n# Tables will be created when needed in the main application",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "Base = declarative_base()\n# No need to create tables here\n# Tables will be created when needed in the main application",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Poem",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Poem(BaseModel):\n    title: str = Field(min_length=1)\n    alt: str = Field(min_length=1, max_length=100)\n    description: str = Field(min_length=1, max_length=1000)\n    img: str = Field(min_length=1, max_length=1000)\n    tags: str = Field(min_length=1, max_length=1000)\n    url: str = Field(min_length=1, max_length=1000)\nclass Songs(BaseModel):\n    title : str = Field(min_length=1)\n    src : str = Field(min_length=1)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Songs",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Songs(BaseModel):\n    title : str = Field(min_length=1)\n    src : str = Field(min_length=1)\n    description : str = Field(min_length=1)\n    subtitle : str = Field(min_length=1)\n    tags : str = Field(min_length=1)\n    lyrics : str = Field(min_length=1)\nclass Comments(BaseModel):\n    userName : str = Field(min_length=1)\n    content : str = Field(min_length=1)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Comments",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Comments(BaseModel):\n    userName : str = Field(min_length=1)\n    content : str = Field(min_length=1)\n    identifier : str = Field(min_length=1)\n@app.get(\"/poems\")\ndef read_api(db: Session = Depends(get_db)):\n    return db.query(models.Poems).all()\n@app.post(\"/poems\")\ndef create_poem(poem: Poem, db: Session = Depends(get_db)):\n    poem_model = models.Poems()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_db():\n    try:\n        db = SessionLocal()\n        yield db\n    finally:\n        db.close()\nclass Poem(BaseModel):\n    title: str = Field(min_length=1)\n    alt: str = Field(min_length=1, max_length=100)\n    description: str = Field(min_length=1, max_length=1000)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "read_api",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def read_api(db: Session = Depends(get_db)):\n    return db.query(models.Poems).all()\n@app.post(\"/poems\")\ndef create_poem(poem: Poem, db: Session = Depends(get_db)):\n    poem_model = models.Poems()\n    poem_model.title = poem.title\n    poem_model.alt = poem.alt\n    poem_model.description = poem.description\n    poem_model.img = poem.img\n    poem_model.tags = poem.tags",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "create_poem",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def create_poem(poem: Poem, db: Session = Depends(get_db)):\n    poem_model = models.Poems()\n    poem_model.title = poem.title\n    poem_model.alt = poem.alt\n    poem_model.description = poem.description\n    poem_model.img = poem.img\n    poem_model.tags = poem.tags\n    poem_model.url = poem.url\n    db.add(poem_model)\n    db.commit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "update_poem",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def update_poem(poem_id: int, poem: Poem, db: Session = Depends(get_db)):\n    poem_model = db.query(models.Poems).filter(models.Poems.id == poem_id).first()\n    if poem_model is None:\n        raise HTTPException(\n            status_code=404,\n            detail=f\"ID {poem_id} : Does not exist\"\n        )\n    poem_model.title = poem.title\n    poem_model.alt = poem.alt\n    poem_model.description = poem.description",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "delete_poem",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def delete_poem(poem_id: int, db: Session = Depends(get_db)):\n    poem_model = db.query(models.Poems).filter(models.Poems.id == poem_id).first()\n    if poem_model is None:\n        raise HTTPException(\n            status_code=404,\n            detail=f\"ID {poem_id} : Does not exist\"\n        )\n    db.query(models.Poems).filter(models.Poems.id == poem_id).delete()\n    db.commit()\n@app.get(\"/songs\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "read_songs",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def read_songs(db: Session = Depends(get_db)):\n    return db.query(models.Songs).all()\n@app.post(\"/songs\")\ndef create_song(song: Songs, db: Session = Depends(get_db)):\n    song_model = models.Songs()\n    song_model.title = song.title  # Corrected assignment\n    song_model.src = song.src\n    song_model.description = song.description\n    song_model.subtitle = song.subtitle\n    song_model.tags = song.tags",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "create_song",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def create_song(song: Songs, db: Session = Depends(get_db)):\n    song_model = models.Songs()\n    song_model.title = song.title  # Corrected assignment\n    song_model.src = song.src\n    song_model.description = song.description\n    song_model.subtitle = song.subtitle\n    song_model.tags = song.tags\n    song_model.lyrics = song.lyrics\n    db.add(song_model)\n    db.commit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "update_song",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def update_song(song_id: int, song: Songs, db: Session = Depends(get_db)):\n    song_model = db.query(models.Songs).filter(models.Songs.id == song_id).first()\n    if song_model is None:\n        raise HTTPException(\n            status_code=404,\n            detail=f\"ID {song_id} : Does not exist\"\n        )\n    song_model.title = song.title  # Corrected assignment\n    song_model.src = song.src\n    song_model.description = song.description",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "delete_song",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def delete_song(song_id: int, db: Session = Depends(get_db)):\n    song_model = db.query(models.Songs).filter(models.Songs.id == song_id).first()\n    if song_model is None:\n        raise HTTPException(\n            status_code=404,\n            detail=f\"ID {song_id} : Does not exist\"\n        )\n    db.delete(song_model)  # Changed to delete the song_model\n    db.commit()\n@app.get(\"/comments\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "read_pages",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def read_pages(db: Session = Depends(get_db)):\n    return db.query(models.Comments).all()\n@app.post(\"/comments\")\ndef create_page(page: Comments, db: Session = Depends(get_db)):\n    page_model = models.Comments()\n    page_model.userName = page.userName  # Corrected assignment\n    page_model.content = page.content\n    page_model.identifier = page.identifier\n    db.add(page_model)\n    db.commit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "create_page",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def create_page(page: Comments, db: Session = Depends(get_db)):\n    page_model = models.Comments()\n    page_model.userName = page.userName  # Corrected assignment\n    page_model.content = page.content\n    page_model.identifier = page.identifier\n    db.add(page_model)\n    db.commit()\n    return page\n@app.put(\"/comment/{comment_id}\")\ndef update_page(page_id: int, page: Comments, db: Session = Depends(get_db)):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "update_page",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def update_page(page_id: int, page: Comments, db: Session = Depends(get_db)):\n    page_model = db.query(models.Comments).filter(models.P.id == page_id).first()\n    if page_model is None:\n        raise HTTPException(\n            status_code=404,\n            detail=f\"ID {page_id} : Does not exist\"\n        )\n    db.commit()\n    return page\n@app.delete(\"/comment/{comment_id}\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "delete_page",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def delete_page(page_id: int, db: Session = Depends(get_db)):\n    page_model = db.query(models.Comments).filter(models.Comments.id == page_id).first()\n    if page_model is None:\n        raise HTTPException(\n            status_code=404,\n            detail=f\"ID {page_id} : Does not exist\"\n        )\n    db.delete(page_model)  # Changed to delete the page_model\n    db.commit()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\nmodels.Base.metadata.create_all(bind=engine)\ndef get_db():\n    try:\n        db = SessionLocal()\n        yield db\n    finally:\n        db.close()\nclass Poem(BaseModel):\n    title: str = Field(min_length=1)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Poems",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Poems(Base):\n    __tablename__ = \"poems\"\n    id = Column(Integer, primary_key=True, index=True)\n    title = Column(String)\n    alt = Column(String)\n    description = Column(String)\n    img = Column(String)\n    tags= Column(String)\n    url= Column(String)\nclass Songs(Base):",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Songs",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Songs(Base):\n    __tablename__ = \"songs\"\n    id = Column(Integer, primary_key=True, index=True)\n    title = Column(String)\n    src = Column(String)\n    description = Column(String)\n    subtitle = Column(String)\n    tags= Column(String)\n    lyrics= Column(String)\nclass Comments(Base):",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Comments",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Comments(Base):\n    __tablename__ = \"poem_pages\"\n    id = Column(Integer, primary_key=True, index=True)\n    userName = Column(String)\n    content = Column(String)\n    identifier = Column(String)",
+        "detail": "models",
+        "documentation": {}
+    }
+]

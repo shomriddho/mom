@@ -1,35 +1,8 @@
 import { useState } from 'react';
-import img from '/headshot.webp'; // Make sure the path is correct
+ // Make sure the path is correct
 import PoemCard from '../components/poem-card';
 
-const poemsData = [
-  // Your poem data here with different tags for each poem
-  { img, title: 'Poem 1', content: 'Content for Poem 1', alt: 'Poem 1', tags: 'poem, nature, love', id:'first' },
-  { img, title: 'Poem 2', content: 'Content for Poem 2', alt: 'Poem 2', tags: 'poem, nature'},
-  { img, title: 'Poem 3', content: 'Content for Poem 3', alt: 'Poem 3', tags: 'poem, hate' },
-  { img, title: 'Poem 4', content: 'Content for Poem 4', alt: 'Poem 2', tags: 'poem, sad' },
-  { img, title: 'Poem 5', content: 'Content for Poem 5', alt: 'Poem 2', tags: 'poem, happy' },
-  { img, title: 'Poem 6', content: 'Content for Poem 6', alt: 'Poem 2', tags: 'poem, angry' },
-  { img, title: 'Poem 7', content: 'Content for Poem 7', alt: 'Poem 1', tags: 'poem, nature' },
-  { img, title: 'Poem 8', content: 'Content for Poem 8', alt: 'Poem 2', tags: 'poem, nature'},
-  { img, title: 'Poem 9', content: 'Content for Poem 9', alt: 'Poem 3', tags: 'poem, hate' },
-  { img, title: 'Poem 10', content: 'Content for Poem 10', alt: 'Poem 2', tags: 'poem, sad' },
-  { img, title: 'Poem 11', content: 'Content for Poem 11', alt: 'Poem 2', tags: 'poem, happy' },
-  { img, title: 'Poem 12', content: 'Content for Poem 12', alt: 'Poem 2', tags: 'poem, angry' },
-  { img, title: 'Poem 1', content: 'Content for Poem 1', alt: 'Poem 1', tags: 'poem, nature' },
-  { img, title: 'Poem 2', content: 'Content for Poem 2', alt: 'Poem 2', tags: 'poem, nature'},
-  { img, title: 'Poem 3', content: 'Content for Poem 3', alt: 'Poem 3', tags: 'poem, hate' },
-  { img, title: 'Poem 4', content: 'Content for Poem 4', alt: 'Poem 2', tags: 'poem, sad' },
-  { img, title: 'Poem 5', content: 'Content for Poem 5', alt: 'Poem 2', tags: 'poem, happy' },
-  { img, title: 'Poem 6', content: 'Content for Poem 6', alt: 'Poem 2', tags: 'poem, angry' },
-  { img, title: 'Poem 7', content: 'Content for Poem 7', alt: 'Poem 1', tags: 'poem, nature' },
-  { img, title: 'Poem 8', content: 'Content for Poem 8', alt: 'Poem 2', tags: 'poem, nature'},
-  { img, title: 'Poem 9', content: 'Content for Poem 9', alt: 'Poem 3', tags: 'poem, hate' },
-  { img, title: 'Poem 10', content: 'Content for Poem 10', alt: 'Poem 2', tags: 'poem, sad' },
-  { img, title: 'Poem 11', content: 'Content for Poem 11', alt: 'Poem 2', tags: 'poem, happy' },
-  { img, title: 'Poem 12', content: 'Content for Poem 12', alt: 'Poem 2', tags: 'poem, angry' },
-  // Add more poems with different tags
-];
+const poemsData = [{"alt":"string","title":"string","id":1,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":2,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":3,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":4,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":5,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":6,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":7,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":8,"description":"string","tags":"string","img":"string","url":"string"}]
 
 function Poems() {
   const [selectedTag, setSelectedTag] = useState(''); // State to store the selected tag
@@ -93,7 +66,7 @@ function Poems() {
             key={index}
             img={poem.img}
             title={poem.title}
-            content={poem.content}
+            content={poem.description}
             alt={poem.alt}
             id={poem.id}
             tags={poem.tags}

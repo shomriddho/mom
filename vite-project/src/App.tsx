@@ -11,7 +11,12 @@ import Poems from "./pages/Poems"
 import About from "./pages/About"
 function App() {
 
-
+  let finalURL = `http://127.0.0.1:8000/poems`;
+  console.log(finalURL);
+  fetch(finalURL)
+  .then((response) => response.json())
+  .then((data) => { console.log(data);});
+  
   return (
     <>
       <Navbar/>
@@ -28,6 +33,8 @@ function App() {
       Totam et, illo delectus iusto perferendis nemo eligendi ratione, iste neque harum, ipsa quibusdam necessitatibus nostrum cupiditate. Cum natus beatae delectus accusamus adipisci quasi ipsam? Deserunt beatae reprehenderit nisi ratione?
       Excepturi fugiat similique ipsa labore minus aspernatur repellendus harum accusantium sequi tempora necessitatibus, est soluta consequuntur error corporis quis. Sit mollitia explicabo debitis repellat, deleniti quam pariatur officiis incidunt saepe." img="https://images.unsplash.com/photo-1682687982470-8f1b0e79151a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="alt" tags="tags"/>}/>
       </Routes>
+      
+      
     
     </> 
   )
