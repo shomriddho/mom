@@ -26,9 +26,23 @@ class Songs(Base):
     
 
 class Comments(Base):
-    __tablename__ = "poem_pages"
+    __tablename__ = "comments"
 
     id = Column(Integer, primary_key=True, index=True)
     userName = Column(String)
     content = Column(String)
     identifier = Column(String)
+
+
+class Pages(Base):
+    __tablename__ = "pages"
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String)
+    subtitle = Column(String)
+    content = Column(String)
+    img = Column(String)
+    alt= Column(String)
+    url= Column(String)
+
+

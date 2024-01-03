@@ -11,12 +11,7 @@ import Poems from "./pages/Poems"
 import About from "./pages/About"
 function App() {
 
-  let finalURL = `http://127.0.0.1:8000/poems`;
-  console.log(finalURL);
-  fetch(finalURL)
-  .then((response) => response.json())
-  .then((data) => { console.log(data);});
-  
+
   return (
     <>
       <Navbar/>
