@@ -7,6 +7,7 @@ import PoemPage from "./layout/PoemPage"
 import Songs from "./pages/Songs"
 import Videos from "./pages/videos"
 
+
 import Poems from "./pages/Poems"
 import About from "./pages/About"
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar/>
+
       <Routes>
         <Route path="/" element={<Main/>}/>
         <Route path="/Home" element={<Home/>}/>

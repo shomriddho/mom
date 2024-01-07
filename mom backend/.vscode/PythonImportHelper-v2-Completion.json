@@ -1,6 +1,102 @@
 [
     {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "constr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -56,6 +152,169 @@
         "documentation": {}
     },
     {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "Secret",
+        "description": "Secret",
+        "isExtraImport": true,
+        "detail": "Secret",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "Secret",
+        "description": "Secret",
+        "isExtraImport": true,
+        "detail": "Secret",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "models",
+        "description": "models",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -80,28 +339,27 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "pydantic",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "pydantic",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "models",
-        "kind": 6,
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "importPath": "models",
-        "description": "models",
-        "detail": "models",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -121,6 +379,22 @@
         "documentation": {}
     },
     {
+        "label": "SessionLocal",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "database",
         "description": "database",
@@ -129,11 +403,148 @@
         "documentation": {}
     },
     {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordRequestForm",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "requests",
+        "description": "requests",
+        "isExtraImport": true,
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "basemodels",
+        "description": "basemodels",
+        "isExtraImport": true,
+        "detail": "basemodels",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "functions",
+        "description": "functions",
+        "isExtraImport": true,
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "imports",
+        "description": "imports",
+        "isExtraImport": true,
+        "detail": "imports",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "Secret",
+        "description": "Secret",
+        "peekOfCode": "SECRET_KEY = \"&|bG%<Eieb&gRzhwumWRh}='OX4F?b{`<V%BDb;,rnv[N*J3E\\:`7sO?CcVM\\>ia\\QWIO>b<~bPI.f!EkF7j!X;$N*t][S.Ao`M6lc(rJv:tqNQ&c2tF,=_z~-|\"\nALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 5678\n# Password hashing\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")",
+        "detail": "Secret",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "kind": 5,
+        "importPath": "Secret",
+        "description": "Secret",
+        "peekOfCode": "ALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 5678\n# Password hashing\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")",
+        "detail": "Secret",
+        "documentation": {}
+    },
+    {
+        "label": "ACCESS_TOKEN_EXPIRE_MINUTES",
+        "kind": 5,
+        "importPath": "Secret",
+        "description": "Secret",
+        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 5678\n# Password hashing\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")",
+        "detail": "Secret",
+        "documentation": {}
+    },
+    {
+        "label": "pwd_context",
+        "kind": 5,
+        "importPath": "Secret",
+        "description": "Secret",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")",
+        "detail": "Secret",
+        "documentation": {}
+    },
+    {
+        "label": "Poem",
+        "kind": 6,
+        "importPath": "basemodels",
+        "description": "basemodels",
+        "peekOfCode": "class Poem(BaseModel):\n    title: str = Field(min_length=1)\n    alt: str = Field(min_length=1, max_length=100)\n    description: str = Field(min_length=1, max_length=10000)\n    img: str = Field(min_length=1, max_length=1000)\n    tags: str = Field(min_length=1, max_length=1000)\n    url: str = Field(min_length=1, max_length=1000)\nclass Songs(BaseModel):\n    title: str = Field(min_length=1)\n    src: str = Field(min_length=1)",
+        "detail": "basemodels",
+        "documentation": {}
+    },
+    {
+        "label": "Songs",
+        "kind": 6,
+        "importPath": "basemodels",
+        "description": "basemodels",
+        "peekOfCode": "class Songs(BaseModel):\n    title: str = Field(min_length=1)\n    src: str = Field(min_length=1)\n    description: str = Field(min_length=1)\n    subtitle: str = Field(min_length=1)\n    tags: str = Field(min_length=1)\n    lyrics: str = Field(min_length=1)\nclass Comments(BaseModel):\n    userName: str = Field(min_length=1)\n    content: str = Field(min_length=1)",
+        "detail": "basemodels",
+        "documentation": {}
+    },
+    {
+        "label": "Comments",
+        "kind": 6,
+        "importPath": "basemodels",
+        "description": "basemodels",
+        "peekOfCode": "class Comments(BaseModel):\n    userName: str = Field(min_length=1)\n    content: str = Field(min_length=1)\n    identifier: str = Field(min_length=1)\nclass Pages(BaseModel):\n    title: str = Field(min_length=1)\n    subtitle: str = Field(min_length=1)\n    content: str = Field(min_length=1)\n    img: str = Field(min_length=1)\n    alt: str = Field(min_length=1)",
+        "detail": "basemodels",
+        "documentation": {}
+    },
+    {
+        "label": "Pages",
+        "kind": 6,
+        "importPath": "basemodels",
+        "description": "basemodels",
+        "peekOfCode": "class Pages(BaseModel):\n    title: str = Field(min_length=1)\n    subtitle: str = Field(min_length=1)\n    content: str = Field(min_length=1)\n    img: str = Field(min_length=1)\n    alt: str = Field(min_length=1)\n    url: str = Field(min_length=1)\nclass UserCreate(BaseModel):\n    username: str\n    password: str",
+        "detail": "basemodels",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "kind": 6,
+        "importPath": "basemodels",
+        "description": "basemodels",
+        "peekOfCode": "class UserCreate(BaseModel):\n    username: str\n    password: str\n    email: str\n    # is_verified: int = 0\n    @validator(\"password\")\n    def validate_password(cls, v):\n        # Add your stricter password validation criteria here\n        if len(v) < 8:\n            raise ValueError(\"Password must be at least 8 characters long\")",
+        "detail": "basemodels",
+        "documentation": {}
+    },
+    {
         "label": "SQLALCHEMY_DATABASE_URL",
         "kind": 5,
         "importPath": "database",
         "description": "database",
-        "peekOfCode": "SQLALCHEMY_DATABASE_URL = \"sqlite:///./poems.db\"\nengine = create_engine(\n    SQLALCHEMY_DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# No need to create tables here\n# Tables will be created when needed in the main application",
+        "peekOfCode": "SQLALCHEMY_DATABASE_URL = \"sqlite:///./main.db\"\nengine = create_engine(\n    SQLALCHEMY_DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# No need to create tables here\n# Tables will be created when needed in the main application",
         "detail": "database",
         "documentation": {}
     },
@@ -165,39 +576,48 @@
         "documentation": {}
     },
     {
-        "label": "Poem",
-        "kind": 6,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "class Poem(BaseModel):\n    title: str = Field(min_length=1)\n    alt: str = Field(min_length=1, max_length=100)\n    description: str = Field(min_length=1, max_length=10000)\n    img: str = Field(min_length=1, max_length=1000)\n    tags: str = Field(min_length=1, max_length=1000)\n    url: str = Field(min_length=1, max_length=1000)\nclass Songs(BaseModel):\n    title: str = Field(min_length=1)\n    src: str = Field(min_length=1)",
-        "detail": "main",
+        "label": "create_access_token",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.utcnow() + expires_delta\n    else:\n        expire = datetime.utcnow() + timedelta(minutes=15)\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt\n# Verify token",
+        "detail": "functions",
         "documentation": {}
     },
     {
-        "label": "Songs",
-        "kind": 6,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "class Songs(BaseModel):\n    title: str = Field(min_length=1)\n    src: str = Field(min_length=1)\n    description: str = Field(min_length=1)\n    subtitle: str = Field(min_length=1)\n    tags: str = Field(min_length=1)\n    lyrics: str = Field(min_length=1)\nclass Comments(BaseModel):\n    userName: str = Field(min_length=1)\n    content: str = Field(min_length=1)",
-        "detail": "main",
+        "label": "verify_token",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def verify_token(token: str, credentials_exception):\n    try:\n        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])\n        username: str = payload.get(\"sub\")\n        if username is None:\n            raise credentials_exception\n        return username\n    except JWTError:\n        raise credentials_exception\n# Authenticate user",
+        "detail": "functions",
         "documentation": {}
     },
     {
-        "label": "Comments",
-        "kind": 6,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "class Comments(BaseModel):\n    userName: str = Field(min_length=1)\n    content: str = Field(min_length=1)\n    identifier: str = Field(min_length=1)\nclass Pages(BaseModel):\n    title: str = Field(min_length=1)\n    subtitle: str = Field(min_length=1)\n    content: str = Field(min_length=1)\n    img: str = Field(min_length=1)\n    alt: str = Field(min_length=1)",
-        "detail": "main",
+        "label": "authenticate_user",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def authenticate_user(db, username: str, password: str, email: str):\n    user = db.query(User).filter(User.username == username).first()\n    if not user or not pwd_context.verify(password, user.password):\n        return False\n    return user\ndef create_verification_token(username: str) -> str:\n    data = {\"sub\": username, \"exp\": datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)}\n    return jwt.encode(data, SECRET_KEY, algorithm=ALGORITHM)\ndef decode_verification_token(token: str) -> Optional[str]:\n    try:",
+        "detail": "functions",
         "documentation": {}
     },
     {
-        "label": "Pages",
-        "kind": 6,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "class Pages(BaseModel):\n    title: str = Field(min_length=1)\n    subtitle: str = Field(min_length=1)\n    content: str = Field(min_length=1)\n    img: str = Field(min_length=1)\n    alt: str = Field(min_length=1)\n    url: str = Field(min_length=1)\n@app.get(\"/poems\")\ndef read_api(db: Session = Depends(get_db)):\n    return db.query(models.Poems).all()",
-        "detail": "main",
+        "label": "create_verification_token",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def create_verification_token(username: str) -> str:\n    data = {\"sub\": username, \"exp\": datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)}\n    return jwt.encode(data, SECRET_KEY, algorithm=ALGORITHM)\ndef decode_verification_token(token: str) -> Optional[str]:\n    try:\n        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])\n        return payload.get(\"sub\")\n    except jwt.ExpiredSignatureError:\n        return None  # Token expired\n    except jwt.InvalidTokenError:",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "decode_verification_token",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def decode_verification_token(token: str) -> Optional[str]:\n    try:\n        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])\n        return payload.get(\"sub\")\n    except jwt.ExpiredSignatureError:\n        return None  # Token expired\n    except jwt.InvalidTokenError:\n        return None  # Invalid token\n# Mock function for sending verification email (replace with your email service integration)",
+        "detail": "functions",
         "documentation": {}
     },
     {
@@ -205,7 +625,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def get_db():\n    try:\n        db = SessionLocal()\n        yield db\n    finally:\n        db.close()\nclass Poem(BaseModel):\n    title: str = Field(min_length=1)\n    alt: str = Field(min_length=1, max_length=100)\n    description: str = Field(min_length=1, max_length=10000)",
+        "peekOfCode": "def get_db():\n    try:\n        db = SessionLocal()\n        yield db\n    finally:\n        db.close()\n# main code\n@app.get(\"/poems\")\ndef read_api(db: Session = Depends(get_db)):\n    return db.query(models.Poems).all()",
         "detail": "main",
         "documentation": {}
     },
@@ -232,7 +652,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def update_poem(poem_id: int, poem: Poem, db: Session = Depends(get_db)):\n    poem_model = db.query(models.Poems).filter(models.Poems.id == poem_id).first()\n    if poem_model is None:\n        raise HTTPException(status_code=404, detail=f\"ID {poem_id} : Does not exist\")\n    poem_model.title = poem.title\n    poem_model.alt = poem.alt\n    poem_model.description = poem.description\n    poem_model.img = poem.img\n    poem_model.url = poem.url\n    db.commit()",
+        "peekOfCode": "def update_poem(poem_id: int, poem: Poem, db: Session = Depends(get_db)):\n    poem_model = db.query(models.Poems).filter(models.Poems.id == poem_id).first()\n    if poem_model is None:\n        raise HTTPException(status_code=404, detail=f\"ID {poem_id} : Does not exist\")\n    poem_model = models.Poems()\n    poem_model.title = poem.title\n    poem_model.alt = poem.alt\n    poem_model.description = poem.description\n    poem_model.img = poem.img\n    poem_model.tags = poem.tags",
         "detail": "main",
         "documentation": {}
     },
@@ -268,7 +688,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def update_song(song_id: int, song: Songs, db: Session = Depends(get_db)):\n    song_model = db.query(models.Songs).filter(models.Songs.id == song_id).first()\n    if song_model is None:\n        raise HTTPException(status_code=404, detail=f\"ID {song_id} : Does not exist\")\n    song_model.title = song.title  # Corrected assignment\n    song_model.src = song.src\n    song_model.description = song.description\n    song_model.subtitle = song.subtitle\n    song_model.tags = song.tags\n    song_model.lyrics = song.lyrics",
+        "peekOfCode": "def update_song(song_id: int, song: Songs, db: Session = Depends(get_db)):\n    song_model = db.query(models.Songs).filter(models.Songs.id == song_id).first()\n    if song_model is None:\n        raise HTTPException(status_code=404, detail=f\"ID {song_id} : Does not exist\")\n    song_model = models.Songs()\n    song_model.title = song.title  # Corrected assignment\n    song_model.src = song.src\n    song_model.description = song.description\n    song_model.subtitle = song.subtitle\n    song_model.tags = song.tags",
         "detail": "main",
         "documentation": {}
     },
@@ -336,11 +756,83 @@
         "documentation": {}
     },
     {
+        "label": "create_access_token",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):\n    to_encode = data.copy()\n    if expires_delta:\n        expire = datetime.utcnow() + expires_delta\n    else:\n        expire = datetime.utcnow() + timedelta(minutes=15)\n    to_encode.update({\"exp\": expire})\n    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt\ndef verify_token(token: str, credentials_exception):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "verify_token",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def verify_token(token: str, credentials_exception):\n    try:\n        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])\n        username: str = payload.get(\"sub\")\n        if username is None:\n            raise credentials_exception\n        return username\n    except JWTError:\n        raise credentials_exception\ndef authenticate_user(db, username: str, password: str):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate_user",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def authenticate_user(db, username: str, password: str):\n    user = db.query(User).filter(User.username == username).first()\n    if not user or not pwd_context.verify(password, user.password):\n        return False\n    return user\n@app.post(\"/token\")\ndef login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):\n    db = SessionLocal()\n    user = authenticate_user(db, form_data.username, form_data.password)\n    if not user:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "login_for_access_token",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):\n    db = SessionLocal()\n    user = authenticate_user(db, form_data.username, form_data.password)\n    if not user:\n        raise HTTPException(status_code=400, detail=\"Incorrect username or password\")\n    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)\n    access_token = create_access_token(\n        data={\"sub\": user.username}, expires_delta=access_token_expires\n    )\n    return {\"access_token\": access_token, \"token_type\": \"bearer\"}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "protected_route",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def protected_route(current_user: str = Depends(verify_token)):\n    return {\"message\": \"You are authenticated\", \"username\": current_user}\n@app.post(\"/register\")\ndef register_user(user: UserCreate, db: Session = Depends(get_db)):\n    # Check if user already exists\n    existing_user = db.query(User).filter(User.username == user.username).first()\n    if existing_user:\n        raise HTTPException(status_code=400, detail=\"Username already registered\")\n    hashed_password = pwd_context.hash(user.password)\n    new_user = User(username=user.username, password=hashed_password)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "register_user",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def register_user(user: UserCreate, db: Session = Depends(get_db)):\n    # Check if user already exists\n    existing_user = db.query(User).filter(User.username == user.username).first()\n    if existing_user:\n        raise HTTPException(status_code=400, detail=\"Username already registered\")\n    hashed_password = pwd_context.hash(user.password)\n    new_user = User(username=user.username, password=hashed_password)\n    db.add(new_user)\n    db.commit()\n    db.refresh(new_user)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "app",
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI()\nmodels.Base.metadata.create_all(bind=engine)\ndef get_db():\n    try:\n        db = SessionLocal()\n        yield db\n    finally:\n        db.close()\nclass Poem(BaseModel):\n    title: str = Field(min_length=1)",
+        "peekOfCode": "app = FastAPI()\norigin = [\n    \"http://localhost:5173\",\n    \"http://localhost:5174\",\n    \"http://localhost:5175\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origin,\n)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "origin",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "origin = [\n    \"http://localhost:5173\",\n    \"http://localhost:5174\",\n    \"http://localhost:5175\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origin,\n)\nmodels.Base.metadata.create_all(bind=engine)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "pwd_context",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef get_db():\n    try:\n        db = SessionLocal()\n        yield db\n    finally:\n        db.close()\n# main code\n@app.get(\"/poems\")\ndef read_api(db: Session = Depends(get_db)):",
         "detail": "main",
         "documentation": {}
     },
@@ -376,7 +868,16 @@
         "kind": 6,
         "importPath": "models",
         "description": "models",
-        "peekOfCode": "class Pages(Base):\n    __tablename__ = \"pages\"\n    id = Column(Integer, primary_key=True, index=True)\n    title = Column(String)\n    subtitle = Column(String)\n    content = Column(String)\n    img = Column(String)\n    alt= Column(String)\n    url= Column(String)",
+        "peekOfCode": "class Pages(Base):\n    __tablename__ = \"pages\"\n    id = Column(Integer, primary_key=True, index=True)\n    title = Column(String)\n    subtitle = Column(String)\n    content = Column(String)\n    img = Column(String)\n    alt= Column(String)\n    url= Column(String)\nclass User(Base):",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True, index=True)\n    username = Column(String,  index=True)\n    password = Column(String)\n    email = Column(String, unique=True, index=True)\n    # is_verified = Column(Integer, default=False)",
         "detail": "models",
         "documentation": {}
     }

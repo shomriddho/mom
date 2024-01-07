@@ -1,16 +1,28 @@
-import { useState } from 'react';
- // Make sure the path is correct
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import PoemCard from '../components/poem-card';
 
-const poemsData = [{"alt":"string","title":"string","id":1,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":2,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":3,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":4,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":5,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":6,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":7,"description":"string","tags":"string","img":"string","url":"string"},{"alt":"string","title":"string","id":8,"description":"string","tags":"string","img":"string","url":"string"}]
-
 function Poems() {
-  const [selectedTag, setSelectedTag] = useState(''); // State to store the selected tag
-  const [searchQuery, setSearchQuery] = useState(''); // State to store the search query
+  const [poemsData, setPoemsData] = useState([]);
+  const [selectedTag, setSelectedTag] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
-  // Filter poems based on the selected tag and search query
+  useEffect(() => {
+    // Fetch poemsData from the API
+    async function fetchPoemsData() {
+      try {
+        const response = await axios.get('http://localhost:8000/poems'); // Replace 'YOUR_API_ENDPOINT_HERE' with your actual API endpoint
+        setPoemsData(response.data);
+      } catch (error) {
+        console.error('Error fetching poems data:', error);
+      }
+    }
+
+    fetchPoemsData();
+  }, []); // Empty dependency array ensures this effect runs only once on component mount
+
   const filteredPoems = poemsData.filter(
-    poem =>
+    (poem) =>
       (selectedTag ? poem.tags.includes(selectedTag) : true) &&
       (searchQuery ? poem.title.toLowerCase().includes(searchQuery.toLowerCase()) : true)
   );

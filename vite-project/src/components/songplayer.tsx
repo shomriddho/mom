@@ -8,7 +8,7 @@ interface AudioPlayerProps {
   description: string;
   lyrics: string;
   subtitle?: string;
-  tags?: string[];
+  tags?: string;
 }
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({
@@ -78,9 +78,9 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
     link.click();
     document.body.removeChild(link);
   };
-
+ let a = tags.split(",")
   return (
-    <div className="bg-gray-100 rounded-lg p-4 md:p-6 shadow-md">
+    <div className="bg-gray-100 rounded-lg p-4 md:p-6 shadow-md mb-4 ">
       <div className="flex justify-between items-center mb-4">
         <div>
           <h2 className="text-xl md:text-2xl font-bold ">{title}</h2>
@@ -104,14 +104,16 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
         <div className="mb-4 ">
           <p className="text-lg text-gray-600">Tags:</p>
           <div className="flex flex-wrap">
-            {tags.map((tag, index) => (
-              <span
-                key={index}
-                className="bg-blue-200 text-blue-800 font-medium px-2 py-1 rounded-full text-sm mr-2 mb-2"
-              >
-                {tag}
-              </span>
-            ))}
+            { 
+             a.map((tag, index) =>
+             <span
+             key={index}
+             className="bg-blue-200 text-blue-800 font-medium px-2 py-1 rounded-full text-sm mr-2 mb-2"
+           >
+             {tag}
+           </span>
+             )
+            }
           </div>
         </div>
       )}

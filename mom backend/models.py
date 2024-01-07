@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from database import Base
-
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base 
 
 class Poems(Base):
     __tablename__ = "poems"
@@ -45,4 +46,11 @@ class Pages(Base):
     alt= Column(String)
     url= Column(String)
 
+class User(Base):
+    __tablename__ = "users"
 
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String,  index=True)
+    password = Column(String)
+    email = Column(String, unique=True, index=True)
+    # is_verified = Column(Integer, default=False)

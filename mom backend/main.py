@@ -1,12 +1,18 @@
-from fastapi import FastAPI, HTTPException, Depends
-from pydantic import BaseModel, Field
-import models
-from database import engine, SessionLocal
-from sqlalchemy.orm import Session
+from imports import *
 
 app = FastAPI()
-
+origin = [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:5175"
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origin,
+)
 models.Base.metadata.create_all(bind=engine)
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
 
 def get_db():
     try:
@@ -16,39 +22,7 @@ def get_db():
         db.close()
 
 
-class Poem(BaseModel):
-    title: str = Field(min_length=1)
-    alt: str = Field(min_length=1, max_length=100)
-    description: str = Field(min_length=1, max_length=10000)
-    img: str = Field(min_length=1, max_length=1000)
-    tags: str = Field(min_length=1, max_length=1000)
-    url: str = Field(min_length=1, max_length=1000)
-
-
-class Songs(BaseModel):
-    title: str = Field(min_length=1)
-    src: str = Field(min_length=1)
-    description: str = Field(min_length=1)
-    subtitle: str = Field(min_length=1)
-    tags: str = Field(min_length=1)
-    lyrics: str = Field(min_length=1)
-
-
-class Comments(BaseModel):
-    userName: str = Field(min_length=1)
-    content: str = Field(min_length=1)
-    identifier: str = Field(min_length=1)
-
-
-class Pages(BaseModel):
-    title: str = Field(min_length=1)
-    subtitle: str = Field(min_length=1)
-    content: str = Field(min_length=1)
-    img: str = Field(min_length=1)
-    alt: str = Field(min_length=1)
-    url: str = Field(min_length=1)
-
-
+# main code
 @app.get("/poems")
 def read_api(db: Session = Depends(get_db)):
     return db.query(models.Poems).all()
@@ -79,10 +53,12 @@ def update_poem(poem_id: int, poem: Poem, db: Session = Depends(get_db)):
     if poem_model is None:
         raise HTTPException(status_code=404, detail=f"ID {poem_id} : Does not exist")
 
+    poem_model = models.Poems()
     poem_model.title = poem.title
     poem_model.alt = poem.alt
     poem_model.description = poem.description
     poem_model.img = poem.img
+    poem_model.tags = poem.tags
     poem_model.url = poem.url
 
     db.commit()
@@ -99,7 +75,6 @@ def delete_poem(poem_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail=f"ID {poem_id} : Does not exist")
 
     db.query(models.Poems).filter(models.Poems.id == poem_id).delete()
-
     db.commit()
 
 
@@ -133,6 +108,7 @@ def update_song(song_id: int, song: Songs, db: Session = Depends(get_db)):
     if song_model is None:
         raise HTTPException(status_code=404, detail=f"ID {song_id} : Does not exist")
 
+    song_model = models.Songs()
     song_model.title = song.title  # Corrected assignment
     song_model.src = song.src
     song_model.description = song.description
@@ -183,9 +159,7 @@ def update_page(page_id: int, page: Comments, db: Session = Depends(get_db)):
 
     if page_model is None:
         raise HTTPException(status_code=404, detail=f"ID {page_id} : Does not exist")
-
     db.commit()
-
     return page
 
 
@@ -221,3 +195,65 @@ def create_page(page: Pages, db: Session = Depends(get_db)):
     db.commit()
 
     return page
+
+
+def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({"exp": expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+def verify_token(token: str, credentials_exception):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+        return username
+    except JWTError:
+        raise credentials_exception
+
+
+def authenticate_user(db, username: str, password: str):
+    user = db.query(User).filter(User.username == username).first()
+    if not user or not pwd_context.verify(password, user.password):
+        return False
+    return user
+
+
+@app.post("/token")
+def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    db = SessionLocal()
+    user = authenticate_user(db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(status_code=400, detail="Incorrect username or password")
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={"sub": user.username}, expires_delta=access_token_expires
+    )
+    return {"access_token": access_token, "token_type": "bearer"}
+
+
+@app.get("/protected")
+def protected_route(current_user: str = Depends(verify_token)):
+    return {"message": "You are authenticated", "username": current_user}
+
+
+@app.post("/register")
+def register_user(user: UserCreate, db: Session = Depends(get_db)):
+    # Check if user already exists
+    existing_user = db.query(User).filter(User.username == user.username).first()
+    if existing_user:
+        raise HTTPException(status_code=400, detail="Username already registered")
+
+    hashed_password = pwd_context.hash(user.password)
+    new_user = User(username=user.username, password=hashed_password)
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
+    return {"message": "User created successfully"}
