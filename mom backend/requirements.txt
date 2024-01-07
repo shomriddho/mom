@@ -1,0 +1,8 @@
+fastapi
+pydantic
+sqlalchemy.orm
+jose
+passlib
+typing
+datetime
+requests
